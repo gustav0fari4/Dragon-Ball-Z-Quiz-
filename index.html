@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Quiz</title>
+        <link rel="stylesheet" href="css/styles.css" /> <!-- Link to external stylesheet -->
+        <script src="javascript/script.js"></script> <!-- Link to external JavaScript file -->
+    </head>
+    <body>
+        <header>
+            <h1>Dragon Ball Z Quiz</h1> <!-- Title of the quiz -->
+        </header>
+        <main>
+            <!-- Introduction section -->
+            <section id="introduction">
+                <h2>Welcome to the DBZ Quiz!</h2> <!-- Introduction message -->
+                <label for="username">Enter your name:</label> <!-- Label for the username input field -->
+                <input type="text" id="username" required> <!-- Username input field -->
+                <button onclick="startQuiz()">Start Quiz</button> <!-- Button to start the quiz -->
+            </section>
+            <!-- Quiz section -->
+            <section id="quiz" style="display: none;"> <!-- Hidden by default -->
+                <div id="question"></div> <!-- Container for the current question -->
+                <div id="options"></div> <!-- Container for multiple choice options -->
+                <div id="text-input" style="display: none;"> <!-- Hidden by default -->
+                   <input type="text" id="textAnswer" placeholder="Your answer"> <!-- Text input field for user's answer -->
+                </div>
+                <div id="image-selection" style="display: none;"> <!-- Hidden by default -->
+                    <p>Click on the correct image:</p> <!-- Prompt for image selection -->
+                    <div id="image-options"></div> <!-- Container for image options -->
+                </div>
+                <button onclick="prevQuestion()" id="prevBtn" style="display: none;">Prev</button> <!-- Button to navigate to the previous question -->
+                <button onclick="nextQuestion()" id="nextBtn">Next</button> <!-- Button to navigate to the next question -->
+            </section>
+            <!-- Feedback section -->
+            <section id="feedback" style="display: none;"> <!-- Hidden by default -->
+                <h2>Quiz Completed</h2> <!-- Feedback message -->
+                <p id="score"></p> <!-- Display user's score -->
+                <p id="message"></p> <!-- Additional feedback message -->
+            </section>
+        </main>
+        <!-- Footer section -->
+        <footer>
+            <p>Developed by: Gustavo Faria</p> <!-- Developer's information -->
+            <p>Student ID: 3122562</p> <!-- Student ID -->
+            <p>Email: gustaavofaria@hotmail.com</p> <!-- Developer's email -->
+        </footer>
+    </body>
+</html>
+

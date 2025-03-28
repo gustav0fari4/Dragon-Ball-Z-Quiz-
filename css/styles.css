@@ -1,0 +1,104 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Use Arial font or fallback to sans-serif */
+  background-color: #f2f2f2; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Use min-height instead of height */
+}
+
+/* Header styles */
+header {
+  background-color: #ff9900; /* Solid orange color */
+  color: black; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 20px 0; /* 20px top and bottom padding, 0 padding left and right */
+  height: 60px; /* Set header height */
+}
+
+/* Footer styles */
+footer {
+  background-color: #003399; /* Solid blue color */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 20px 0; /* 20px top and bottom padding, 0 padding left and right */
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+  height: 60px; /* Set footer height */
+}
+
+/* Introduction, Quiz, and Feedback styles */
+#introduction, #quiz, #feedback {
+  max-width: 600px; /* Maximum width for content */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add padding */
+  background-color: #ffffff; /* White background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+}
+
+#introduction h2, #quiz #question, #feedback h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+/* Input styles */
+input[type="text"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 10px; /* Add space below */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Padding */
+  background-color: #ff9900; /* Orange background color */
+  color: #000000; /* Black text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #cc6600; /* Darker orange on hover */
+}
+
+/* Quiz container styles */
+#quiz-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding */
+  margin: auto; /* Center horizontally */
+  width: 600px; /* Fixed width */
+  max-width: 100%; /* Responsive maximum width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#quiz {
+  width: 100%; /* Full width */
+}
+
+/* Image selection options styles */
+#image-options {
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically if extra space */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 10px; /* Spacing between images */
+}
+
+#image-options img {
+  width: 20vw; /* 20% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; /* Maximum width for large screens */
+  min-width: 80px; /* Minimum width for small screens */
+  margin: 0 auto; /* Center images horizontally */
+}
+
